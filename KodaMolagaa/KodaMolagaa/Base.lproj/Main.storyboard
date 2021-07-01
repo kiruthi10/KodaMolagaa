@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="KodaMolagaa" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="14" y="70"/>
+        </scene>
+        <!--Network Error View Controller-->
+        <scene sceneID="JVB-qg-7Oe">
+            <objects>
+                <viewController storyboardIdentifier="NetworkErrorViewController" id="swd-lw-1jy" customClass="NetworkErrorViewController" customModule="KodaMolagaa" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="T74-Mb-FFe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no_internet" translatesAutoresizingMaskIntoConstraints="NO" id="i90-2Z-tx3">
+                                <rect key="frame" x="57" y="323" width="300" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="R2Q-8J-eDk"/>
+                                    <constraint firstAttribute="width" constant="300" id="sPc-In-sxu"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JOx-oP-DJU">
+                                <rect key="frame" x="182" y="607" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="otB-b2-dTy"/>
+                                    <constraint firstAttribute="width" constant="50" id="sG2-lH-IGB"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="retry"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LJe-ss-fN9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="i90-2Z-tx3" firstAttribute="centerX" secondItem="T74-Mb-FFe" secondAttribute="centerX" id="1rI-um-0JR"/>
+                            <constraint firstItem="i90-2Z-tx3" firstAttribute="centerY" secondItem="T74-Mb-FFe" secondAttribute="centerY" id="2ec-Nx-y66"/>
+                            <constraint firstItem="JOx-oP-DJU" firstAttribute="centerY" secondItem="T74-Mb-FFe" secondAttribute="centerY" constant="184" id="FZT-IS-6Ce"/>
+                            <constraint firstItem="JOx-oP-DJU" firstAttribute="centerX" secondItem="T74-Mb-FFe" secondAttribute="centerX" id="KFw-Qe-PX3"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aVM-ib-eyJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="648" y="76"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="no_internet" width="532" height="446"/>
+        <image name="retry" width="981" height="994"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
